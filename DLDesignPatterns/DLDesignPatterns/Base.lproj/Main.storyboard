@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6se-LJ-hAB">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="rfE-6N-oui">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6se-LJ-hAB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="II6-Ms-Joz">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Fhk-34-j1C" kind="relationship" relationship="rootViewController" id="DjP-ZR-qgl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fkA-cA-MoH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1079.2" y="132.68365817091455"/>
+        </scene>
+        <!-- Design Patterns-->
+        <scene sceneID="J6l-av-BhP">
+            <objects>
+                <viewController id="Fhk-34-j1C" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SPy-5S-XdA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0P7-Ee-vOl" customClass="BaseButton">
+                                <rect key="frame" x="67" y="144" width="240" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="gXc-QJ-Kb5"/>
+                                    <constraint firstAttribute="width" constant="240" id="h62-Zk-ra7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <state key="normal" title="Chain Of Responsibility"/>
+                                <connections>
+                                    <action selector="chainOfResponsibilityPattern:" destination="Fhk-34-j1C" eventType="touchUpInside" id="i2c-nf-JKj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FTk-NT-rr1" customClass="BaseButton">
+                                <rect key="frame" x="132" y="208" width="111" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="N7W-9T-bOy"/>
+                                    <constraint firstAttribute="width" constant="111" id="o4G-X7-Y1H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <state key="normal" title="Bridge"/>
+                                <connections>
+                                    <action selector="bridge:" destination="Fhk-34-j1C" eventType="touchUpInside" id="B6P-tY-jTF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcQ-Di-mnt" customClass="BaseButton">
+                                <rect key="frame" x="122.5" y="272" width="130" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="A9e-m0-mvh"/>
+                                    <constraint firstAttribute="height" constant="34" id="zWH-hz-9Q0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <state key="normal" title="Adapter"/>
+                                <connections>
+                                    <action selector="adapter:" destination="Fhk-34-j1C" eventType="touchUpInside" id="A4D-jm-yRY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LLw-U9-1rp" customClass="BaseButton">
+                                <rect key="frame" x="117" y="336" width="140" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="4Tl-6b-KiO"/>
+                                    <constraint firstAttribute="height" constant="34" id="DGB-FH-BeF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <state key="normal" title="Singleton"/>
+                                <connections>
+                                    <action selector="singleton:" destination="Fhk-34-j1C" eventType="touchUpInside" id="bKK-hJ-3L2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNn-re-BBv" customClass="BaseButton">
+                                <rect key="frame" x="122.5" y="400" width="130" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="27F-xB-fvv"/>
+                                    <constraint firstAttribute="width" constant="130" id="leJ-xO-LBV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <state key="normal" title="Command"/>
+                                <connections>
+                                    <action selector="command:" destination="Fhk-34-j1C" eventType="touchUpInside" id="8Q9-5D-xjQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNt-ts-fDK" customClass="BaseButton">
+                                <rect key="frame" x="127" y="464" width="120" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="PcM-k9-9fA"/>
+                                    <constraint firstAttribute="width" constant="120" id="mXX-ML-Eyb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <state key="normal" title="Delegate"/>
+                                <connections>
+                                    <action selector="delegate:" destination="Fhk-34-j1C" eventType="touchUpInside" id="JkE-X4-9kx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cNt-ts-fDK" firstAttribute="top" secondItem="fNn-re-BBv" secondAttribute="bottom" constant="30" id="1jb-kI-ZzS"/>
+                            <constraint firstItem="LLw-U9-1rp" firstAttribute="centerX" secondItem="SPy-5S-XdA" secondAttribute="centerX" id="1pl-Rt-utS"/>
+                            <constraint firstItem="hcQ-Di-mnt" firstAttribute="centerX" secondItem="SPy-5S-XdA" secondAttribute="centerX" id="ADR-IS-eAQ"/>
+                            <constraint firstItem="0P7-Ee-vOl" firstAttribute="centerX" secondItem="SPy-5S-XdA" secondAttribute="centerX" id="CQn-mF-7WX"/>
+                            <constraint firstItem="fNn-re-BBv" firstAttribute="top" secondItem="LLw-U9-1rp" secondAttribute="bottom" constant="30" id="EBV-XZ-d0J"/>
+                            <constraint firstItem="hcQ-Di-mnt" firstAttribute="top" secondItem="FTk-NT-rr1" secondAttribute="bottom" constant="30" id="Nit-K3-OIR"/>
+                            <constraint firstItem="FTk-NT-rr1" firstAttribute="top" secondItem="0P7-Ee-vOl" secondAttribute="bottom" constant="30" id="Qga-vQ-dQG"/>
+                            <constraint firstItem="FTk-NT-rr1" firstAttribute="centerX" secondItem="SPy-5S-XdA" secondAttribute="centerX" id="VNU-Ik-lkC"/>
+                            <constraint firstItem="LLw-U9-1rp" firstAttribute="top" secondItem="hcQ-Di-mnt" secondAttribute="bottom" constant="30" id="ZGD-Jl-rAd"/>
+                            <constraint firstItem="fNn-re-BBv" firstAttribute="centerX" secondItem="SPy-5S-XdA" secondAttribute="centerX" id="di3-vh-mNP"/>
+                            <constraint firstItem="cNt-ts-fDK" firstAttribute="centerX" secondItem="SPy-5S-XdA" secondAttribute="centerX" id="iQX-0c-lCH"/>
+                            <constraint firstItem="0P7-Ee-vOl" firstAttribute="top" secondItem="ylP-eB-i6f" secondAttribute="top" constant="80" id="uTm-fW-hvb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ylP-eB-i6f"/>
+                    </view>
+                    <navigationItem key="navigationItem" title=" Design Patterns" id="fzr-C7-cNr">
+                        <barButtonItem key="backBarButtonItem" title=" " id="xrt-h7-try"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q7b-xu-fZi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2341.5999999999999" y="155.17241379310346"/>
+        </scene>
+    </scenes>
+</document>
